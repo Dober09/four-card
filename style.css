@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  max-width: 376px;
+  min-height: 100vh;
+  margin: 5rem auto;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.main-box {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-box h2 {
+  margin-block: 10px;
+}
+
+.main-box .head {
+  font-weight: 100;
+  color: hsl(229, 6%, 66%);
+}
+
+.main-box .sub-head {
+  font-weight: 700;
+  color: hsl(234, 12%, 34%);
+}
+
+.main-box p {
+  color: hsl(229, 6%, 66%);
+  width: 290px;
+  line-height: 1.5;
+  margin-block: 10px 60px;
+}
+
+.wrapper {
+  width: 290px;
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px hsl(0, 1%, 17%);
+  margin-block: 20px;
+  height: 210px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.box hr {
+  border: none;
+  border-bottom: 4px solid hsl(212, 86%, 64%);
+}
+
+.box:nth-child(1) hr {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.sub-wrapper .box:nth-child(1) hr {
+  border-color: hsl(0, 78%, 62%);
+}
+.sub-wrapper .box:nth-child(2) hr {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.box h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0 10px;
+  padding-left: 20px;
+  color: hsl(234, 12%, 34%);
+}
+
+.box p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding-left: 20px;
+  color: hsl(229, 6%, 66%);
+}
+
+.box img {
+  height: 70px;
+  width: 70px;
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.sub-wrapper .box:nth-child(2) p {
+  width: 260px;
+}
+
+.box:nth-child(3) p {
+  width: 250px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(34, 97%, 64%);
+  }
+
+  .container {
+    min-width: 80rem;
+  }
+
+  .main-box p {
+    width: 440px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1080px;
+    align-items: center;
+  }
+
+  .box {
+    width: 290px;
+    margin-inline: 20px;
+  }
+
+
+}
